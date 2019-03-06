@@ -19,9 +19,15 @@ class App extends React.Component{
     }
     render(){
        return (
-            <div>
-                <SongList songs={this.state.songs} handleSelect={this.handleSelect}/>
-                <SongDetails currSong={this.state.currentSong} />
+           <div className="ui container">
+                <div className="ui grid">
+                    <div className="eight wide column">
+                        <SongList songs={this.state.songs} handleSelect={this.handleSelect}/>
+                    </div>
+                    <div className="six wide column">
+                        <SongDetails className="eight wide column" currSong={this.state.currentSong} />
+                    </div>
+                </div>
             </div>
        )
     }

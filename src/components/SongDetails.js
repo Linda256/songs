@@ -1,7 +1,6 @@
 import React from 'react';
 
 const SongDetails=(props)=>{
-   
     return(
         <div>
             <h3>Details For</h3>
